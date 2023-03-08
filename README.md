@@ -12,13 +12,19 @@ If the repo helps you, I would appreciate a star on GitHub. If you use the scrip
 ```json
 "service_worker":  "background.js"
 ```
+4. Inside your extensions `manifest.json` add the following line to the `permissions` array:
+```json
+"tabs"
+```
 
-It should look similar to this:
+
+It should now look similar to this:
 ```json
 ...
-"background":  {
-	"service_worker":  "background.js"
+"background": {
+  "service_worker": "background.js"
 },
+  "permissions": ["tabs"]
 ...
 ```
 > ❗Don't forget to reload your extension❗
