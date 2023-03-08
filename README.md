@@ -10,7 +10,7 @@ If the repo helps you, I would appreciate a star on GitHub. If you use the scrip
 
 3. Inside your extensions `manifest.json` add the following line to the `background` property:
 ```json
-"service_worker":  "background.js"
+"service_worker":  "newTab-override.js"
 ```
 4. Inside your extensions `manifest.json` add the following line to the `permissions` array:
 ```json
@@ -22,7 +22,7 @@ It should now look similar to this:
 ```json
 ...
 "background": {
-  "service_worker": "background.js"
+  "service_worker": "newTab-override.js"
 },
   "permissions": ["tabs"]
 ...
